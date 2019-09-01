@@ -14,6 +14,13 @@
 		349345B1231BF7AC00ADFFB3 /* MenuRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345B0231BF7AC00ADFFB3 /* MenuRootView.swift */; };
 		349345B6231BF80900ADFFB3 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345B4231BF80900ADFFB3 /* NiblessView.swift */; };
 		349345B7231BF80900ADFFB3 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345B5231BF80900ADFFB3 /* NiblessViewController.swift */; };
+		349345BA231BFA7800ADFFB3 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345B9231BFA7800ADFFB3 /* Identifiable.swift */; };
+		349345BC231BFABC00ADFFB3 /* UITableView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345BB231BFABC00ADFFB3 /* UITableView+Identifiable.swift */; };
+		349345BE231BFB1F00ADFFB3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345BD231BFB1F00ADFFB3 /* UIView+Extensions.swift */; };
+		349345C1231BFBC500ADFFB3 /* OcclusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345C0231BFBC500ADFFB3 /* OcclusionViewController.swift */; };
+		349345C3231BFBD800ADFFB3 /* OcclusionRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349345C2231BFBD800ADFFB3 /* OcclusionRootView.swift */; };
+		349345C5231BFD2300ADFFB3 /* vase.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 349345C4231BFD2300ADFFB3 /* vase.usdz */; };
+		349345C7231C295C00ADFFB3 /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 349345C6231C295C00ADFFB3 /* robot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		349345B0231BF7AC00ADFFB3 /* MenuRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRootView.swift; sourceTree = "<group>"; };
 		349345B4231BF80900ADFFB3 /* NiblessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		349345B5231BF80900ADFFB3 /* NiblessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		349345B9231BFA7800ADFFB3 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		349345BB231BFABC00ADFFB3 /* UITableView+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifiable.swift"; sourceTree = "<group>"; };
+		349345BD231BFB1F00ADFFB3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		349345C0231BFBC500ADFFB3 /* OcclusionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionViewController.swift; sourceTree = "<group>"; };
+		349345C2231BFBD800ADFFB3 /* OcclusionRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionRootView.swift; sourceTree = "<group>"; };
+		349345C4231BFD2300ADFFB3 /* vase.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = vase.usdz; sourceTree = "<group>"; };
+		349345C6231C295C00ADFFB3 /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,8 @@
 		349345AA231BF70B00ADFFB3 /* ARAssets */ = {
 			isa = PBXGroup;
 			children = (
+				349345C6231C295C00ADFFB3 /* robot.usdz */,
+				349345C4231BFD2300ADFFB3 /* vase.usdz */,
 			);
 			path = ARAssets;
 			sourceTree = "<group>";
@@ -88,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				349345AD231BF74800ADFFB3 /* Menu */,
+				349345BF231BFBAE00ADFFB3 /* Occlusion */,
+				349345C8231C299200ADFFB3 /* BodyDetection */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -104,6 +122,7 @@
 		349345B2231BF7D200ADFFB3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				349345B8231BFA6D00ADFFB3 /* Extensions */,
 				349345B3231BF7F000ADFFB3 /* Nibless */,
 			);
 			path = Utilities;
@@ -116,6 +135,32 @@
 				349345B5231BF80900ADFFB3 /* NiblessViewController.swift */,
 			);
 			path = Nibless;
+			sourceTree = "<group>";
+		};
+		349345B8231BFA6D00ADFFB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				349345B9231BFA7800ADFFB3 /* Identifiable.swift */,
+				349345BB231BFABC00ADFFB3 /* UITableView+Identifiable.swift */,
+				349345BD231BFB1F00ADFFB3 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		349345BF231BFBAE00ADFFB3 /* Occlusion */ = {
+			isa = PBXGroup;
+			children = (
+				349345C0231BFBC500ADFFB3 /* OcclusionViewController.swift */,
+				349345C2231BFBD800ADFFB3 /* OcclusionRootView.swift */,
+			);
+			path = Occlusion;
+			sourceTree = "<group>";
+		};
+		349345C8231C299200ADFFB3 /* BodyDetection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BodyDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349345C7231C295C00ADFFB3 /* robot.usdz in Resources */,
 				2F60E1E722631E0F00357E98 /* LaunchScreen.storyboard in Resources */,
+				349345C5231BFD2300ADFFB3 /* vase.usdz in Resources */,
 				2F60E1E422631E0F00357E98 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,10 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349345C3231BFBD800ADFFB3 /* OcclusionRootView.swift in Sources */,
 				349345AF231BF7A400ADFFB3 /* MenuViewController.swift in Sources */,
+				349345BA231BFA7800ADFFB3 /* Identifiable.swift in Sources */,
 				349345B1231BF7AC00ADFFB3 /* MenuRootView.swift in Sources */,
+				349345BC231BFABC00ADFFB3 /* UITableView+Identifiable.swift in Sources */,
 				349345B7231BF80900ADFFB3 /* NiblessViewController.swift in Sources */,
+				349345C1231BFBC500ADFFB3 /* OcclusionViewController.swift in Sources */,
 				2F60E1DB22631E0F00357E98 /* AppDelegate.swift in Sources */,
+				349345BE231BFB1F00ADFFB3 /* UIView+Extensions.swift in Sources */,
 				349345B6231BF80900ADFFB3 /* NiblessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
